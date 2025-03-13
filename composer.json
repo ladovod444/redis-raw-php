@@ -1,0 +1,38 @@
+{
+  "name": "ethanhann/redis-raw",
+  "description": "Redis/PHP connectors.",
+  "type": "library",
+  "autoload": {
+    "psr-4": {
+      "Ehann\\RedisRaw\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Ehann\\Tests\\": "tests/"
+    }
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ethan Hann",
+      "email": "ethanhann@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=8",
+    "psr/log": "^3.0.0"
+  },
+  "require-dev": {
+    "ukko/phpredis-phpdoc": "^5.0.1-beta8",
+    "phpunit/phpunit": "^9",
+    "mockery/mockery": "^1.5.0",
+    "predis/predis": "~v2.0.0",
+    "friendsofphp/php-cs-fixer": "^v3.10.0",
+    "consolidation/robo": "^4.0.0-alpha1",
+    "monolog/monolog": "^3.2.0",
+    "cheprasov/php-redis-client": "^1.10.0"
+  }
+}
