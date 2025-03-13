@@ -15,6 +15,11 @@ class PredisAdapter extends AbstractRedisRawClient
 {
        /** @var Client */
     public $redis;
+
+    public function __construct(LoggerInterface $logger)
+    {
+        $this->logger = $logger;
+    }
     
     public function connect($hostname = '127.0.0.1', $port = 6379, $db = 0, $password = null): RedisRawClientInterface
     {
